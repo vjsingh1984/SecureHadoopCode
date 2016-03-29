@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.cloudera.sa</groupId>
-        <artifactId>SecureHadoopCode</artifactId>
+        <artifactId>SecureHiveServer2Query</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>SecureHiveServer2Query</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>QueryKerberosAuthHS2</module>
-        <module>QueryKerberosAuthLDAPS</module>
-    </modules>
+    <artifactId>QueryKerberosAuthLDAPS</artifactId>
+    <packaging>jar</packaging>
+    <properties>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
 </project>
