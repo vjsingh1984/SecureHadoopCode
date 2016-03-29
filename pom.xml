@@ -9,6 +9,7 @@
         <module>HBaseBulkLoad</module>
         <module>SecureMapReduce</module>
         <module>SecureHiveServer2Query</module>
+        <module>SecureKafkaDev</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
