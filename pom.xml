@@ -10,6 +10,7 @@
         <module>SecureMapReduce</module>
         <module>SecureHiveServer2Query</module>
         <module>SecureKafkaDev</module>
+        <module>OozieJavaRestExample</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
