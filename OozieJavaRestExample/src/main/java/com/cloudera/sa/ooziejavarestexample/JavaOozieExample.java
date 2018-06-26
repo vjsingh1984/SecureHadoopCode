@@ -22,11 +22,11 @@ import org.apache.oozie.client.OozieClientException;
 
 public class JavaOozieExample {
 
-    public static  void main(String... args) {
+    public static void main(String... args) {
         System.exit(execute(args));
     }
 
-    static  int execute(String... args) {
+    static int execute(String... args) {
         if (args.length != 2) {
             System.out.println();
             System.out.println("Expected parameters: <WF_APP_HDFS_URI> <WF_PROPERTIES>");
@@ -73,15 +73,14 @@ public class JavaOozieExample {
             System.out.println("Workflow job completed ...");
             printWorkflowInfo(wc.getJobInfo(jobId));
             return (wc.getJobInfo(jobId).getStatus() == WorkflowJob.Status.SUCCEEDED) ? 0 : -1;
-        }
-        catch (IOException | OozieClientException | InterruptedException ex) {
+        } catch (IOException | OozieClientException | InterruptedException ex) {
             System.out.println();
             System.out.println(ex.getMessage());
             return -1;
         }
     }
 
-    private static  void printWorkflowInfo(WorkflowJob wf) {
+    private static void printWorkflowInfo(WorkflowJob wf) {
         System.out.println("Application Path   : " + wf.getAppPath());
         System.out.println("Application Name   : " + wf.getAppName());
         System.out.println("Application Status : " + wf.getStatus());
