@@ -29,7 +29,7 @@ public class JavaOozieExample {
     static int execute(String... args) {
         if (args.length != 2) {
             System.out.println();
-            System.out.println("Expected parameters: <WF_APP_HDFS_URI> <WF_PROPERTIES>");
+            System.out.println("Expected parameters: <WF_APP_HDFS_URI> <WF_PROPERTIES> <JOB_ID>");
             return -1;
         }
         String appUri = args[0];

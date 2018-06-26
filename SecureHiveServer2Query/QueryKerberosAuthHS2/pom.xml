@@ -25,13 +25,6 @@
             <artifactId>hadoop-common</artifactId>
             <version>2.6.0-cdh5.5.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.cloudera.sa</groupId>
-            <artifactId>QueryKerberosAuthHS2</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
-            <type>jar</type>
-        </dependency>
     </dependencies>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
